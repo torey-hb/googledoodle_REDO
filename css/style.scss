@@ -1,0 +1,144 @@
+// Template for Google Homepage
+@import "doodle-template";
+
+/* Your Awesome Doodle */
+
+// External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
+
+/* Doodle Stage */
+#stage {
+  background: #444;
+  height: 500px;
+  width: 690px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 25px;
+  z-index:-1;
+
+}
+
+body{
+  background: #F9F9F9;
+}
+
+div{
+  position: relative;
+}
+
+.mountains{
+  position: absolute;
+  top: -95px;
+  left:0px;
+  height: 690px;
+  width: 690px;
+}
+
+// bike doodle
+
+#bikeframe{
+  width:27%;
+  position: absolute;
+  left:-300px;
+  top: 270px;
+  z-index:1;
+  animation: bikeframe 10s 1;
+
+}
+
+@keyframes bikeframe {
+  
+  0% {
+       left: -500px;
+
+  }
+  
+  100% {
+    left: 1400px;
+    
+  }
+   
+}
+
+
+
+
+#rightwheel, #leftwheel{
+  width: 11%;
+  border: 1 px solid red;
+}
+
+
+#rightwheel{
+  position: relative;
+  top: 396px;
+  left: -360px;
+  animation: rightwheel 10s 1 ;
+}
+
+@keyframes rightwheel {
+  
+  0% {
+      transform: rotate(0);
+      left: -430px;
+  }
+  
+  100% {
+      transform: rotate(3240deg); 
+      left: 1450px;
+  }
+   
+}
+
+
+
+
+#leftwheel{
+  position: relative;
+  top: 397px;
+  left: -107px;
+  animation: leftwheel 10s 1;
+}
+
+@keyframes leftwheel {
+  
+  0% {
+      transform: rotate(0);
+      left: -500px;
+  }
+  
+  100% {
+      transform: rotate(3240deg); 
+    left: 1400px;
+  }
+   
+}
+
+
+// NATIONAL BIKE TO WORK DAY - MAY 18 
+
+.day {
+  position: absolute;
+  top: 180px;
+  opacity: 0.1; 
+  width: 50%;
+  
+  transition-property: opacity;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+  z-index: 2;
+}
+
+.day:hover {
+  opacity: .9;
+}
+
+
+
+
+
+
+
+
+// .rotate{
+//   animation: rotate 10s timing-function delay iteration-count direction fill-mode;
+// }
