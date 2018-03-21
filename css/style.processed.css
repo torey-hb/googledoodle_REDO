@@ -78,7 +78,7 @@ div {
 #bikeframe {
   width: 27%;
   position: absolute;
-  left: -300px;
+  left: -200px;
   top: 270px;
   z-index: 1;
   animation: bikeframe 10s 1;
@@ -101,8 +101,8 @@ div {
 
 #rightwheel {
   position: relative;
-  top: 396px;
-  left: -360px;
+  top: 245px;
+  left: -260px;
   animation: rightwheel 10s 1;
 }
 
@@ -119,8 +119,8 @@ div {
 
 #leftwheel {
   position: relative;
-  top: 397px;
-  left: -107px;
+  top: 245px;
+  left: -205px;
   animation: leftwheel 10s 1;
 }
 
@@ -135,17 +135,9 @@ div {
   }
 }
 
-.day {
-  position: absolute;
+#day {
+  position: relative;
   top: 180px;
-  opacity: 0.1;
   width: 50%;
-  transition-property: opacity;
-  transition-duration: .3s;
-  transition-timing-function: linear;
   z-index: 2;
-}
-
-.day:hover {
-  opacity: .9;
 }
